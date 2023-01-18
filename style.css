@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-color: hsl(225, 100%, 94%) ;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 700px;
+    width: 450px;
+    /* height: 43.5rem;
+    width: 28rem; */
+
+    background-color: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 3rem;
+}
+
+h1,.price h3{
+    color: hsl(223, 47%, 23%);
+}
+p {
+    text-align: center;
+}
+
+.price-plan {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.price-plan a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    align-self: center;
+}
+
+.price-plan a:hover{
+    color: hsl(245, 75%, 52%,0.6);
+    text-decoration: none;
+}
+
+.left {
+    display: flex;
+}
+
+.price{
+    margin-left: 1rem;
+}
+.price p{
+    text-align: left;
+}
+
+.btn-submit{
+    background-color: hsl(245, 75%, 52%);
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+
+    /* Shadow */
+    -webkit-box-shadow: 0px 18px 25px 0px rgba(52,51,198,0.3);
+    -moz-box-shadow: 0px 18px 25px 0px rgba(52,51,198,0.3);
+    box-shadow: 0px 18px 25px 0px rgba(52,51,198,0.3);
+}
+
+.btn-submit:hover{
+    background-color: hsla(245, 75%, 52%, 0.6);
+}
+
+.btn-cancel {
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.btn-cancel:hover {
+    color: black;
+}
